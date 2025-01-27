@@ -104,29 +104,3 @@ char	*ft_gnl_substr(const char *s1, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-
-/*char    *ft_gnl_substr(const char *s1, unsigned int start, size_t len)
-{
-	char    *str;
-	size_t  len_s1;
-	size_t  i;
-
-	if (!s1 || !len)
-		return (NULL);
-	len_s1 = ft_strlen(s1);
-	if (len_s1 == 0 || len_s1 < start)
-		return (ft_strdup(""));
-	if (len_s1 - start < len)
-		len = len_s1 - start;
-	str = (char *)malloc((len + 1) * sizeof(char));
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (s1[start + i] && i < len)
-	{
-		str[i] = s1[start + i];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}*/
